@@ -1,0 +1,589 @@
+header {
+	//margin-top: 40px;
+	width: 100%;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(8,44,80);
+	margin: 0px;
+	color: white;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	//overflow:hidden;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+td {
+	//padding: 3px;
+	margin: 0;
+	border: 1px solid white;
+	//vertical-align: bottom;
+}
+
+td input[type=text],td input[type=password], td input[type=email] {
+	width: 100%;	
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#outer {
+	//display: inline;
+	width: 100%;
+	height: 1%;
+	position: absolute;
+	box-sizing: border-box;
+	pointer-events: none 
+}
+
+#nazwastrony {
+	box-sizing: border-box;
+	margin: 0 auto;
+	height: auto;
+	width: 100%;
+	max-width: 1008px;
+}
+
+h1 {
+	//width: 20%;
+	margin-top: 5px;
+	text-align: left;
+	font-size: 225%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    	font-size: 150%;
+  }
+}
+
+#logrej a {
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#logrej a:hover {
+	//color: rgb(0,150,0);
+	color: gold;
+	cursor: pointer;
+}
+
+.active {
+	color: gold;
+	font-weight: bold;
+}
+
+#rejestracja {
+	display: none;
+}
+
+#logrejform {
+	box-sizing: border-box;
+	position: absolute;
+	//float: right;
+	//margin-right: 10px;
+	//margin-top: 10px;
+	right: 10px;
+	top: 10px;
+}
+
+#header1 {
+	box-sizing: border-box;
+	border: 1px solid white;
+}
+
+.logrejform {
+	//float: right;
+	width: 200px;
+	border: 1px solid white;
+	border-top: 0;
+}
+
+.logrejform td {
+	padding: 3px;
+	border: 0;
+	background: rgb(15,85,170);
+	background: #a21c3d;
+}
+
+.logrejform th {
+	padding: 3px;
+	background: rgb(15,75,145);
+	background: #a21c3d;
+	width: 100%;
+	text-align: center;
+}
+
+#logowanie, #rejestracja {
+	display: none;
+}
+
+#przycisklog, przyciskrej {
+}
+
+h4 {
+	float: right;
+	margin-right: 10px;
+}
+
+#wyloguj {
+	color: orange;
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#wyloguj:hover {
+	color: red;
+}
+
+#divMenu {
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+    	padding:0;
+    	text-align:center;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+    	margin: 0 auto;
+	//white-space: nowrap;
+}
+
+#ulMenu a {
+	transition-property: color,border-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}	
+
+#ulMenu a:hover {
+	color: gold;
+	border-top: 1px solid gold;
+}
+
+li {
+	display: inline-block;
+	text-align: center;
+    	font-family: Ubuntu,sans-serif;
+	//margin-top: 40px;
+	margin-bottom: 0px;
+	//background: #a21c3d;
+}
+
+li a {
+	border-right: .1rem solid #b63655;
+    	text-align: center;
+	padding: 20px;
+	font-size: 100%;
+	text-decoration: none;
+	background: #a21c3d;
+}
+
+#latesttable span {
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+@media only screen and (max-width: 1030px) {
+  li a {
+    	padding: 15px;
+	font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  li a {
+    	padding: 10px;
+	font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  li a {
+    	padding: 10px;
+	font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  li a {
+    	padding: 5px;
+	font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li a {
+    	padding: 5px;
+	font-size: 58%;
+  }
+}
+
+.menuaktywny {
+	//background: #a6781e;
+	border-top: 1px solid gold;
+	color: gold;
+	font-weight: bold;
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
+}
+
+#latest {
+	width: 100%;
+	box-sizing: border-box;
+	//display: flex;
+    	//flex-wrap: wrap;
+}
+
+#reszta {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#latest table, #resztatabela {
+	width: 99%;
+	max-width: 1008px;
+	margin: 0 auto;
+	border-spacing: 0px;
+	border-collapse: separate;
+}
+
+#resztatabela {
+	border: 0px;
+	//border-collapse: collapse;
+}
+#resztatabela td {
+	//border: 0px solid #e5e5e5;
+	background: linear-gradient(168deg,rgb(10,80,150),rgb(8,44,80),rgb(8,44,80));
+	
+}
+
+#resztatabela tr {
+	width: 40%;
+	//background-image: linear-gradient(160deg,rgb(10,55,100),rgb(8,44,80))
+	
+}
+
+#resztatabela td a {
+	color: white;
+}
+
+#wrapperPokazwiecej {
+	display:block;
+	box-sizing: border-box;
+	width: 99%;
+	max-width: 1008px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#pokazwiecej, #nowypost {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: 5px;
+	width: 150px;
+	padding: 5px;
+	border: 1px solid white;
+	background: #a21c3d;
+	transition-property: color,border;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#nowypost {
+	margin: 0 auto;
+	//float: center;
+}
+
+#pokazwiecej:hover, #nowypost:hover{
+	color: gold;
+	cursor: pointer;
+	border: 1px solid gold;
+}
+
+#latest table td, #resztatabela td a{
+	background-repeat: no-repeat;
+    	background-position: 50%;
+    	background-size: cover;
+    	position: relative;
+	//padding: 3px;
+	transition-property: border, background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#resztatabela td a {
+	background-position: center top;
+}
+
+#latesttable span, #resztatabela span{
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#latest table td a {
+	display: block;
+	position: absolute;
+   	bottom: 0;
+}
+
+#latest table td a span {
+	//font-weight: bold;
+}
+
+#latest table td:hover, #resztatabela tr:hover td{
+	border: 1px solid gold;
+}
+#resztatabela tr:hover td{
+	background: linear-gradient(168deg,rgb(10,80,150),rgb(10,80,150),rgb(8,44,80),rgb(8,44,80),rgb(8,44,80));
+}
+#resztatabela tr:hover td a, #resztatabela tr:hover td a span {
+	color: gold!important;
+}
+
+#resztatabela tr, #resztatabela td {
+	transition-property: border, background-image;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+#latesttable a:hover span, #resztatabela a:hover, #resztatabela a:hover span {
+	color: gold !important;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid white;
+}
+
+footer a {
+	margin: 0 auto;
+	display: block;
+	max-width: 1008px;
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	//background-color: #a21c3d;
+	
+}
+
+footer a:hover {
+	cursor: pointer;
+	color: gold;
+}
+
+span {
+	 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	 //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.mecz {
+	width:99%;
+	height: auto;
+	max-width:1008px;
+	margin: 0 auto;
+	transition: background 0.4s ease-in-out;
+}
+
+.mecz:hover {
+	background: darkblue;
+	cursor: pointer;
+}
+
+.mecz:hover .golewmeczu, .mecz:hover .kartkiwmeczu {
+	//display: table-row;
+}
+
+.meczetabela {
+	width: 100%;
+	//max-width: 1008px;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
+.meczetabela td {
+	border: 0;
+}
+
+.nazwaligi {
+	text-align: left;
+	padding: 10px;
+}
+
+.stadion {
+	text-align: center;
+	padding: 10px;
+}
+
+.datameczu {
+	text-align: right;
+	padding: 10px;
+}
+
+.teamalogo {
+	text-align: center;
+	width: 350px;
+	min-width: 200px;
+	height: 200px;
+}
+	
+.wynikAtd {
+	width: 10%;
+	max-width: 104px;
+	text-align: center;
+}
+
+.wynikA {
+	display: block;
+	font-size: 200%;
+	width: 100%;
+	min-height: 30px;
+}
+
+.wynikBtd {
+	width: 10%;
+	max-width: 104px;
+	text-align: center;
+}
+
+.wynikB {
+	display: block;
+	font-size: 200%;
+	width: 100%;
+	min-height: 30px;
+}
+
+.teamblogo {
+	text-align: center;
+	width: 350px;
+	min-width: 200px;
+	height: 200px;
+}	
+
+.logoa {
+	text-align: center;
+	height: 200px;
+}
+
+.vs {
+	font-size: 200%;
+	text-align: center;
+}
+
+.nazwateamu {
+	font-size: 200%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.nazwagraczaA {
+	text-align: left;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 150%;
+	vertical-align: top;
+}
+
+.nazwagraczaA span, .nazwagraczaB span, .nazwagraczakartkiA span, .nazwagraczakartkiB span {
+	display: block;
+	width: 100%;
+	min-height: 30px;
+}
+
+.ikonagole {
+	padding-top: 10px;
+	text-align: center;
+	width:30px;
+	height:30px;
+	vertical-align: top;
+}
+
+.golewmeczu, .kartkiwmeczu {
+	//display: none;
+}
+.pilkaikona {
+	width:30px;
+	height:30px;
+}
+
+.nazwagraczaB {
+	text-align: right;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 150%;
+	vertical-align: top;
+}
+
+.nazwagraczakartkiA {
+	text-align: left;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 150%;
+	vertical-align: top;
+}
+
+.nazwagraczakartkiB {
+	text-align: right;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 150%;
+	vertical-align: top;
+}
+
+.statsy {
+	padding: 30px;
+	text-align: center;
+	font-size: 150%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.statsy span {
+	display: block;
+}
+
+#selteama, #selteamb {
+	background-color: rgb(10, 80, 150);
+}
